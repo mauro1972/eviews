@@ -13,8 +13,11 @@ function eviews_preprocess_page(&$vars) {
   //get the current language
   $current_lang = $language->language;
 
-  drupal_add_js(drupal_get_path('theme', 'eviews') . '/compass/javascripts/eviews.js');
-  $vars['scripts'] = drupal_get_js(); // necessary in D7?  
+$path = drupal_get_path('theme', 'eviews') . '/compass/javascripts/eviews.js';
+  if (file_exists($path)) {
+    drupal_add_js(drupal_get_path('theme', 'eviews') . '/compass/javascripts/eviews.js');
+    $vars['scripts'] = drupal_get_js(); // necessary in D7?
+  } 
   // Add information about the number of sidebars.
   if (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
     $vars['content_column_class'] = ' class="col-sm-4"';
