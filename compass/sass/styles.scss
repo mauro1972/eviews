@@ -1,0 +1,149 @@
+// customize bootstrap variables here:
+@import "breakpoint";
+@import "variables";
+@import "bootstrap";
+@import "compass/css3";
+@import "compass/utilities";
+@import "backgrounds";
+@import "buttons";
+@import "font";
+@import "header";
+@import "navigation";
+@import "topbar";
+@import "aside";
+@import "views";
+@import "market";
+@import "staff";
+@import "contactpage";
+@import "pager";
+
+img {
+  max-width: 100%;
+}
+
+.node-type-article,
+.node-type-page,
+.page-node-1,
+.page-node-12,
+.page-node-13 {
+  .field-name-title-field {
+    display: none;
+  }
+}
+
+
+.node-type-press,
+.page-base-de-datos,
+.page-node-25,
+.page-reports,
+.page-articles,
+.page-taxonomy-term,
+.node-type-article,
+.node-type-reports,
+.node-type-markets {
+  h1.page-header {
+    display: none;
+  }
+}
+
+h1.orange-header {
+  padding-bottom: 5px;
+  font-size: 30px !important;
+  position: relative;
+
+  span {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.field-type-file .file {
+  font-size: 20px;
+  padding: 8px 15px;
+
+  a {
+    color: #FFF;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#page-header,
+aside {
+  @include border-radius(5px);
+}
+
+#page-header {
+  border: 1px #CECECE solid;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#footer-wrapper {
+  border-top: 1px #f97431 solid;
+  margin-top: 20px;
+}
+.footer {
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-bottom: 70px;
+  padding-top: 10px;
+
+}
+
+
+
+/* full page market, report*/
+.panels-flexible-2 .panels-flexible-row {
+  padding-bottom: 40px;
+}
+
+.node-type-reports .categoria table,
+.panels-flexible-region-2-categoria table {
+  width: 100%;
+
+  h2 {
+    font-size: 25px !important;
+    font-weight: 100;
+    margin: 0;
+    border-bottom: 1px #f57c14 solid;
+
+    span {
+      border-bottom: 4px #FF6600 solid;
+      color: #f57c14;      
+      display: inline-block;
+      padding-right: 100px;
+    }
+  }
+}
+
+.view-header {
+  height: auto;
+}
+
+.orange-header {
+  border-bottom: 1px #f57c14 solid;
+  color: #f57c14;
+  font-size: 24px !important;
+  line-height: 35px;
+  margin-bottom: 20px;
+
+  span {
+    border-bottom: 4px #FF6600 solid;
+    padding-right: 100px;
+  }
+}
+
+/* frontage recomended */
+#block-views-recomendados-block-2 .well {
+  border-color: #CCC;
+  box-shadow: none;
+  margin-bottom: 0;
+
+  @include border-radius(8px); 
+}
+

@@ -1,0 +1,127 @@
+/* Top bar region style */
+
+/* Slider */
+#page-header #block-block-1,
+#block-views-slide-home-block {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @include breakpoint(720px) {
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  li {
+    position: relative;
+
+    img {
+      height: 190px;
+    }
+  }
+
+
+  .flexslider {
+    box-shadow: none;
+  } 
+
+  .slider {
+
+    img {
+      border: 2px #CCC solid;
+
+      @include border-radius(5px); 
+    }
+  }
+
+  .slidetext {
+    color: #808080;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    text-align: right;
+    top: 20%;
+    width: 300px;
+  }
+
+  h4 {
+    color: #03366f;
+    font-size: 30px;
+  }
+}
+
+#page-header #clientes,
+#block-user-login {
+
+  @include breakpoint(720px) {
+    float: right;
+    width: 28%;
+  }  
+
+  h3.clientes {
+    color: #000099;
+    float: left;
+    margin-top: 5px;
+  }
+
+  a.btn {
+    float: right;
+    margin-top: 5px;
+    padding: 2px 15px !important;
+    width: auto;
+  }
+
+  .register-help {
+    clear: both;
+    font-size: 13.5px;
+    padding:10px 0 5px;
+  }
+
+  .form-item {
+    float: left;
+    width: 49%;
+
+    &.form-item-pass {
+      float: right;
+    }
+
+    label {
+      display: none;
+      color: #AAA;
+      top: 7px;
+      font-weight: 100;
+      font-size: 15px;
+    }
+
+    .form-text {
+      color: #AAA;
+      font-weight: 100;
+      font-size: 15px;
+    }
+  }
+
+  .form-submit {
+    clear: both;
+    color: #FFF;
+    width: 100%;
+  }
+
+  .login-pass {
+    font-size: 12px;
+    padding-top: 15px;
+    text-align: center;
+  }
+}
+
+/* DB logged users */
+#block-block-6,
+#block-block-10 {
+  text-align: center;
+
+  a.btn {
+    &:hover {
+      color: #FFF;
+    }
+  }
+}

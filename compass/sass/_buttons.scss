@@ -1,0 +1,107 @@
+/* CSS3 Buttons */
+.not-logged-in .field-name-field-pdf a,
+.node-type-press #press-link,
+#block-block-6 a.btn,
+#block-block-10 a.btn,
+.field-type-file .file,
+.webform-submit,
+.page-node #pdf-size .file,
+.node-readmore a,
+.views-field-view-node a,
+.node-type-markets .pane-2 a,
+.btn, .content .read-more a,
+button.cupid-green {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #7fbf4d;
+  background-image: -moz-linear-gradient(center top , #7fbf4d, #63a62f);
+  border-color: #63a62f #63a62f #5b992b;
+  border-image: none;
+  @include border-radius(5px, 5px);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 0 #96ca6d inset;
+  color: #fff;
+  padding: 5px 0 6px;
+  text-align: center;
+  width: 150px;
+
+  @include single-transition(all, 0.2s, ease-in, 0.2s);
+
+  &:hover {
+    background-color: #76b347;
+    background-image: -moz-linear-gradient(center top , #76b347, #5e9e2e);
+    box-shadow: 0 1px 0 0 #8dbf67 inset;
+    cursor: pointer;
+  }
+  &:active {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #5b992b #5b992b #538c27;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #548c29 inset, 0 1px 0 0 #eeeeee;
+  }
+}
+
+/* blue button*/
+.not-logged-in .field-name-field-pdf a,
+#block-block-6 a.btn,
+#block-block-10 a.btn,
+.field-type-file .file,
+.page-node #pdf-size .file,
+.node-readmore a,
+.views-field-view-node a,
+.node-type-markets .pane-2 a,
+.content .read-more a,
+.form-submit {
+  background-color: #04264b;
+  border-color: #5b992b #5b992b #538c27;
+  @include background-image(linear-gradient(#003e80, #003e80, #04264b));
+  border-color: #003e80 #003e80 #02172d; 
+  @include single-box-shadow(0, 1px, 0, 0, #02172d, "inset");
+
+  &:hover {
+    background-color: #003e80;
+    color: #FFF !important;
+    @include background-image(linear-gradient(#04264b, #003e80, #003e80));
+    @include single-box-shadow(0, 0, 0, 0, #04264b, "inset");   
+  }
+  &:active, &:focus {
+    background-color: #003e80;
+    color: #FFF !important;
+    @include background-image(linear-gradient(#04264b, #003e80, #003e80));
+    @include single-box-shadow(0, 0, 0, 0, transparent, "inset");     
+  }
+}
+
+/* orange button*/
+.node-type-press #press-link,
+.webform-submit,
+a.user-register,
+.btn-orange {
+  background-color: #f85616;
+  border-color: #e94707 #e94707 #d44106;
+  @include background-image(linear-gradient(#f97431, #f97431, #f85616));
+  @include single-box-shadow(0, 1px, 0, 0, #e94707, "inset");
+
+  &:hover {
+    border-color: #e94707 #e94707 #d44106;
+    color: #FFF !important;
+    background-color: #f85616;
+    @include background-image(linear-gradient(#f85616, #f97431, #f97431));
+    @include single-box-shadow(0, 0, 0, 0, #e94707, "inset");   
+  }
+  &:active, &:focus {
+    border-color: #e94707 #e94707 #d44106;
+    background-color: #f85616;
+    color: #FFF !important;
+    @include background-image(linear-gradient(#f85616, #f97431, #f97431));
+    @include single-box-shadow(0, 0, 0, 0, transparent, "inset");     
+  }  
+}

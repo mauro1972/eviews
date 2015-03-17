@@ -1,0 +1,185 @@
+/* Mercado Page Style */
+
+.panels-flexible-column-18-3,
+.panels-flexible-column-18-4 {
+  clear: both;
+  float: none;
+  height: 40px;
+  margin: 0 auto;
+  width: 100%;
+
+  #search-block-form .input-group {
+    float: none;
+    width: 100%;
+  }
+
+  @include breakpoint(720px) {
+    clear: none;
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+/* Internal Search form */
+#search-block-form {
+  .input-group {
+    display: inline-block;
+    float: right;
+  }
+
+  .form-text {
+    border: 2px #979797 solid;
+    color: #AAA;
+    display: inline-block;
+    font-size: 15px;
+    height: 40px;
+
+    @include border-radius(5px);
+  }
+
+  #edit-submi, .input-group-btn {
+    display: none;
+  }
+}
+
+.pane-node-field-image {
+
+}
+
+#back-to-category,
+.back-to-category {
+  h2 {
+    color: #000;
+    display: inline;
+    float: left;
+    margin: 0;
+  }
+  .pane-content {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.1;
+    float: left;
+    padding-left: 5px;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+  .field-label {
+    display: none;
+  }
+}
+
+.pane-node-title {
+  h3 {
+    color: #000;
+    font-weight: 500;
+  }
+}
+
+.pane-node-body {
+  color: #666;
+  font-size: 16px;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.node-type-markets .pane-2 a {
+  font-size: 25px;
+  padding: 5px 15px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pane-node-created {
+  color: #f09100;
+  margin-bottom: 10px;  
+}
+
+.not-logged-in .field-name-field-pdf a,
+.page-node #pdf-size .file {
+  font-size: 18px;
+  padding: 10px 15px;
+
+  @include border-radius(5px);
+
+  img, span {
+    display: none;
+  }
+
+  a {
+    color: #FFF;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.node-type-press #press-link a {
+  color: #FFF;
+
+  &:hover {
+    color: #FFF;
+  }
+}
+
+@include breakpoint(720px) {
+  .pane-node-field-image {
+    float: left;
+    margin-right: 25px;
+    /*@include grid-span(2, 1);*/
+  }
+
+
+  .node-type-press #press-link,
+  .pane-node-created,
+  .node-type-markets .pane-2,
+  .pane-node-title {
+    /*margin-left: 430px;*/
+  } 
+
+  .pane-node-field-pdf,
+  .not-logged-in .field-name-field-pdf,
+  .pane-node-body {
+
+  }
+
+  /* Report pages */
+  #mini-panel-fecha_trimestral,
+  #mini-panel-fecha {
+    color: #f09100;
+    height: 25px;
+    margin-left: 430px;
+
+    .panels-flexible-region {
+      width: 100% !important;
+    }
+
+    .panel-separator {
+      border: 1px #e00 solid;
+      display: none;
+    }
+
+    .pane-node-field-trimestre,
+    .pane-node-field-semana-id {
+      float: left;
+    }
+
+    .pane-node-created {
+      float: left;
+      margin-left: 0.5em;
+    }
+  }  
+}
+

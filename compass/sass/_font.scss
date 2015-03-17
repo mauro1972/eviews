@@ -1,0 +1,19 @@
+/* Fonts */
+body {
+	color: #666;
+}
+
+h2, .h2 {
+  font-family: arial,serif;
+  font-size: 18px !important;
+  color: #03316C;
+}
+
+a {
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}

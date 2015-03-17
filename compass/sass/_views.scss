@@ -1,0 +1,302 @@
+/* Views Styles */
+
+/* Home View */
+.contenedor {
+  overflow: hidden;
+  padding-bottom: 20px;
+
+    @include breakpoint(720px) {
+      margin-right: 20px;
+      /*@include grid-span(2, 1);*/
+    }  
+
+  h3 {
+    border-bottom: 1px #f57c14 solid;
+    line-height: 1.4;
+    padding: 0 0 5px;
+
+    .category {
+ 
+
+      a {
+        border-bottom: 4px #FF6600 solid;
+        color: #f57c14;
+        padding: 0 100px 4px 0;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .read-more {
+      color: #000099;
+      display: inline-block;
+      float: right;
+      font-size: 16px;
+      margin: 10px 10px 0 0;
+
+      a {
+        color: #000099;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .imagen {
+    text-align: center;
+
+    @include breakpoint(720px) {
+      float: left;
+      /*@include grid-span(2, 1);*/
+    }
+  }
+
+  .content {
+    @include breakpoint(720px) {
+      margin-left: 250px;
+      /*@include grid-span(2, 1);*/
+    } 
+
+    .teaser-body {
+      margin-bottom: 20px;
+    }
+
+    .read-more a {
+      display: inline-block;
+      float: right;
+      padding: 2px 10px !important;
+      width: auto;
+
+      &:hover {
+        text-decoration: none;
+      }      
+    }   
+  }
+
+  h2 {
+    font-size: 20px;
+
+    a {
+      color: #000;
+
+      &:hover,
+      &:focus {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Recomended view */
+.view-recomendados {
+  padding: 10px 20px;
+
+  h3 {
+    color: #000099;
+    margin: 0 0 15px;
+  }
+  .recomendados-grid-item {
+    position: relative;
+
+    &:hover {
+      .recomendados-titulo {
+        opacity: 0.7;
+        visibility: visible;
+      }
+    }
+  }  
+  .recomendados-titulo {
+    background: #000;
+    padding: 15px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    @include single-transition(all, 0.2s, ease-in, 0.2s);
+
+    @include breakpoint(720px) {
+      opacity: 0;
+      visibility: hidden;
+    }    
+
+    a {
+      color: #FFF;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .views-field-field-image {
+    padding: 0 10px;
+  }
+  .recomendados-imagen {
+    width: 33%px;
+
+    img {
+      height: 150px; /*TODO: image preset */
+      width: 100%;
+    }
+  }
+}
+
+/* View recomendados panel */
+.pane-views-recomendados-block-1 {
+  padding: 20px 0 30px;
+
+  .view-recomendados {
+    padding: 0;
+  }
+
+  td {
+    padding: 0 25px;
+  }
+  td:first-child {
+    padding-left: 0;
+  }
+  td:last-child {
+    padding-right: 0;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: #333;
+      }      
+    }
+  }
+
+  .views-field-field-image {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .views-field-body {
+    margin-bottom: 20px;
+  }
+
+  .views-field-view-node a {
+    padding: 2px 15px; 
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@include breakpoint(720px) {
+  
+  .pane-views-recomendados-block-1 {
+
+    .views-field-field-image {
+      float: left;
+    }
+
+    .views-field-body,
+    .views-field-view-node {
+      margin-left: 240px;
+    }
+  }
+
+ 
+  .view-prensa,
+  .view-articulos,
+  .view-informes,
+  .view-mercados {
+    
+    .field-type-image {
+      float: left;
+    }
+
+    .fecha,
+    .cuerpo_reportes,
+    .field-name-field-trimestre,
+    .field-name-field-semana-id,
+    .field-name-title-field,
+    .field-type-date,
+    .field-name-body,
+    .node-readmore {
+      margin-left: 280px;
+    }
+
+    .cuerpo_reportes {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* view mercados */
+.view-prensa .node,
+.view-articulos .node,
+.view-informes .node,
+.view-mercados .node {
+  padding-bottom: 20px;
+  h2 {
+    display: none;
+  }
+
+  .field-type-text h2 {
+    display: block;
+  }
+
+  .field-name-title-field {
+    margin-bottom: 20px;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .fecha,
+  .field-name-field-trimestre,
+  .field-name-field-semana-id,
+  .field-type-date {
+    color: #f09100;
+    margin-bottom: 10px;
+  }
+  .fecha {
+    .field-name-field-trimestre,
+    .field-name-field-semana-id {
+      display: inline-block;
+      float: left;
+      margin: 0 0.5em 0 0;
+    }
+  }
+
+  .field-name-body {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  
+  ul.links {
+    text-align: right;    
+  }
+  .node-readmore {
+    text-align: right;
+
+    a {
+      padding: 2px 15px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

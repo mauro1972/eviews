@@ -1,0 +1,36 @@
+/* staff page */
+.staff-item {
+  font-size: 16px;
+  margin-bottom: 50px;
+
+  h2 {
+    color: #000;
+    font-size: 26px !important;
+    margin: 0 0 20px;
+  }
+
+  h3 {
+    color: #f60;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 10px 0 20px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+@include breakpoint(720px) {
+  .staff-item {
+    position: relative;
+    padding-left: 290px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }  
+}
