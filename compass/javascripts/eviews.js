@@ -24,7 +24,9 @@
         alert('aside mayor '+ aside_wrapper_h);
         //$('.content-wrapper #main-content-box').height(aside_wrapper_h);
       }*/
-      $('.content-wrapper').equalHeights();
+      if ($(window).width() > 719) {
+        $('.content-wrapper').equalHeights();
+      }
     }
   }
 
