@@ -146,6 +146,17 @@
       width: 100%;
     }
   }
+
+  table td[class*="col-"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include breakpoint(720px) {
+      display: table-cell;
+      width: auto;
+    }
+  }
 }
 
 /* View recomendados panel */
