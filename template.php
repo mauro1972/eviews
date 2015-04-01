@@ -9,6 +9,9 @@
  */
 function eviews_preprocess_page(&$vars) {
 
+$highchartPath = libraries_get_path('highcharts');
+drupal_add_js($highchartPath . '/js/highcharts.js');
+
   global $language;
   //get the current language
   $current_lang = $language->language;

@@ -51,7 +51,6 @@ scripts[] = 'compass/javascripts/bootstrap/popover.js'
 scripts[] = 'compass/javascripts/bootstrap/scrollspy.js'
 scripts[] = 'compass/javascripts/bootstrap/tab.js'
 scripts[] = 'compass/javascripts/bootstrap/transition.js'
-scripts[] = 'compass/javascripts/eviews.js;
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''
